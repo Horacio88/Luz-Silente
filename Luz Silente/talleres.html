@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es_MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Luz Silente</title>
+
+<link rel="icon" type="image/x-icon" href="_imgs/ico_luz_silente.png" />
+<link rel="shortcut icon" type="image/x-icon" href="_imgs/ico_luz_silente.png" />
+
+<link href="_css/reset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/layout_desktop.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/layout_tablet.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/layout_smartphone.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/layout_common.css" rel="stylesheet" type="text/css" media="screen">
+
+<link href="Item02_FancyBox/_css/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen">
+<script type="text/javascript" src="Item03_jQuery/_js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="Item02_FancyBox/_js/jquery.fancybox.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(e) {
+		$(".fancybox").fancybox();
+	});
+	
+</script>
+
+</head>
+
+<body>
+	<div id="wrap">
+    
+	  <div id="header">
+      	<h1><a href="home.html" style="color:white;">Luz Silente</a></h1>
+      </div>
+    
+      <div id="nav">
+      	<ul>
+      		<li><img src=""><a href="nosotros.html">Nosotros</a></li>
+            <li><img src=""><a href="club.html">Cine Club</a></li>
+            <li><img src=""><a style="background:gray; color:black">Talleres</a></li>
+            <li><img src=""><a href="contacto.html">Contacto</a></li>
+     	</ul>
+      </div>
+
+<!--				----------------	Talleres	---------------					-->
+
+<div id="talleres">
+      	
+        <div id="tituloTalleres">
+			<h2>Talleres</h2>
+        </div>
+        
+<!--modulo de taller-->
+        <div class="descripcionTalleres">     
+         
+          <div class="poster">
+          		<a class="fancybox" rel="g03" href="_imgs/taller/taller_guion.jpg"><img src="_imgs/taller/taller_guion.jpg"></a>
+          </div><!--End Poster-->
+          
+          <div class="descripcionPoster">
+    	     
+        	 	<br><br>
+				<h3>GUIÓN CINEMATOGRÁFCIO</h3>
+				<p>
+				Herramientas básicas.<br>				
+				Sinopsis.<br>
+            Escaleta.<br>
+            Argumento.<br>
+				Estructura Dramática.<br>
+				Arquitectura del guión.<br>
+				</p>
+
+          </div><!--End Descripcion Poster-->
+		  <div class="cl"></div>
+    </div><!--End Descripcion Talleres-->
+ 
+<!--modulo de taller-->
+        <div class="descripcionTalleres">     
+         
+          <div class="poster">
+          		<a class="fancybox" rel="g04" href="_imgs/taller/ciclo_taller.jpg"><img src="_imgs/taller/ciclo_taller.jpg"></a>
+					<a class="fancybox" rel="g04" href="_imgs/taller/taller2.jpg"></a>
+					<a class="fancybox" rel="g04" href="_imgs/taller/taller1.jpg"></a>
+					
+          </div><!--End Poster-->
+          
+          <div class="descripcionPoster">
+          		<br><br>
+        	    <p>Nuevos talleres gratis </p><br>
+                <h3><a class="fancybox" rel="g05" href="#contacto">Inscribete</a></h3>
+            	<h5><a href="#map"></a></h5>
+          </div><!--End Descripcion Poster-->
+		  <div class="cl"></div>
+    </div><!--End Descripcion Talleres-->    
+</div><!--Edn Talleres-->
+<!--				----------------	End	Talleres	---------------					-->
+
+<div id="contacto" style="display:none;">
+   	      <div id="formulario">
+			<form class="labels" action="MAILTO:luzsilente@gmail.com" method="post" enctype="text/plain">
+				<input class="boton botones" type="text" name="name" value="Nombre">
+				<input class="boton botones" type="text" name="mail" value="E-mail"><br>
+                <textarea class="mensaje botones " rows="10" cols="30" size="50">Taller(es)</textarea><br>
+					<div id="botones">
+                		<input class="enviar botones" type="submit" value="Enviar">
+                	</div>
+			</form>
+		</div><!--formulario-->
+        
+    </div><!--end contacto-->
+
+    </div><!--End wrap-->
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* CSS Document */
+html, body { margin:0px; width:100%; height:100%;}
+
+#custom_info_window p span.titulo{ font-family:"Lucida Console", Monaco, monospace; font-size:11px; color:#F90;}
+#custom_info_window p span.data{ width:95%; font-family:"Lucida Console", Monaco, monospace; font-size:14px; color:gray;}
+
+#map
+{ width:100%; height:100%;	}
+
+#custom_info_window{
+	 width:350px; height:200px; position:relative; background:black; padding-left:10px;
+}
+#custom_info_window:hover{
+	}
+
+
+#custom_info_window, #custom_info_window a, .data, h1, .titulo, img{
+transition:all 0.5s ease-in-out 0s;
+-webkit-transition:all 0.5s ease-in-out 0s;
+-o-transition:all 0.5s ease-in-out 0s;
+-ms-transition:all 0.5s ease-in-out 0s;
+-moz-transition:all 0.5s ease-in-out 0s;
+-khtml-transition:all 0.5s ease-in-out 0s;	
+}
+
+#custom_info_window h1{ font-weight:lighter; color:gray; font-size:26px; text-align:center; padding-top:10px; font-family:"Lucida Console", Monaco, monospace;}
+#custom_info_window img{ position:absolute; right:0px; top:50px;}
+#custom_info_window p{}
+#custom_info_window a{ background:#CCC; color:gray; padding:5px; text-decoration:none;}
+#custom_info_window a:hover{ background:orange; color:white;}
+	

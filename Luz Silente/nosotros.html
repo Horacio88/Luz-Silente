@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es_MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Luz Silente</title>
+
+<link rel="icon" type="image/x-icon" href="_imgs/ico_luz_silente.png" />
+<link rel="shortcut icon" type="image/x-icon" href="_imgs/ico_luz_silente.png" />
+
+<link href="_css/reset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/layout_desktop.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/layout_tablet.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/layout_smartphone.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/layout_common.css" rel="stylesheet" type="text/css" media="screen">
+
+<link href="Item02_FancyBox/_css/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen">
+<script type="text/javascript" src="Item03_jQuery/_js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="Item02_FancyBox/_js/jquery.fancybox.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(e) {
+		$(".fancybox").fancybox();
+	});
+</script>
+</head>
+
+<body>
+	<div id="wrap">
+    
+	  <div id="header">
+      	<h1><a href="home.html" style="color:white;">Luz Silente</a></h1>
+      </div>
+    
+      <div id="nav">
+      	<ul>
+      		<li><img src=""><a style="background:gray; color:black">Nosotros</a></li>
+            <li><img src=""><a href="club.html">Cine Club</a></li>
+            <li><img src=""><a href="talleres.html">Talleres</a></li>
+            <li><img src=""><a href="contacto.html">Contacto</a></li>
+     	</ul>
+      </div>
+      
+<!--				----------------	Nosotros	---------------					-->
+
+      <div id="luzSilente">
+   		<div id="tituloLuzSilente">
+        	<h2>Luz Silente</h2>
+        </div><!--end titulo club-->
+        
+        <div id="descripcionLuzSilente">
+       	  
+          <div id="logoDescripcion">
+          	<a class="fancybox" rel="g02" href="_imgs/logo_luz_silente.jpg"><img src="_imgs/luz_silente.png"></a>
+				<a class="fancybox" rel="g02" href="_imgs/grupo2.jpg"></a>
+				<a class="fancybox" rel="g02" href="_imgs/postales.jpg"></a>
+				<a class="fancybox" rel="g02" href="_imgs/proyeccion_aire_libre.jpg"></a>
+				<a class="fancybox" rel="g02" href="_imgs/proyeccion.jpg"></a>
+				<a class="fancybox" rel="g02" href="_imgs/grupo.jpg"></a>
+				
+          </div><!--End Logo Descripcion -->
+          
+          <div id="descripcion">
+          	<h3>Nuestra visión:</h3>
+            <p>
+            Luz Silente es un organismo universitario autogestivo que centra su atención y esfuerzos en la difusión, discusión, 		
+            crítica, publicación y capacitación de las nociones que comprenden la producción audiovisual video-cinematográfica 
+            dentro de la Escuela Nacional de Artes Plásticas.<br><br> 
+            Luz Silente se proyecta como cineclub; un lugar de reflexión, de 
+            promoción y dignificación de esta expresión artística , educativa y social. 
+            </p><br><br>
+            <a class="fancybox" rel="g08" href="#unete"><h3>&raquo; Unete</h3></a>
+				<a id="facebook" href="https://www.facebook.com/LZSTCC" target="_blank"><img src="_imgs/facebook.png"></a>
+          </div> <!--End Descripcion -->
+          <div class="cl"></div>
+        </div><!--descripcionLuzSilente-->
+
+      </div><!--end luzSilente-->
+
+<!--				----------------	End Nosotros	---------------					-->
+	
+	<div id="unete" style="display:none;">
+	<h3 style="background:silver; display:inline-block; padding:10px"><a class="fancybox" href="#contacto">&raquo; Manda tus datos</a></h3>
+		<img src="_imgs/nuevos_integrantes.jpg" style="width:100%">
+	</div>
+	
+	<div id="contacto" style="display:none;">
+   	      <div id="formulario">
+			<form class="labels" action="MAILTO:luzsilente@gmail.com" method="post" enctype="text/plain">
+				<input class="boton botones" type="text" name="name" value="Nombre">
+				<input class="boton botones" type="text" name="mail" value="E-mail"><br>
+                <textarea class="mensaje botones " rows="10" cols="30" size="50">motivos/habilidades</textarea><br>
+					<div id="botones">
+                		<input class="enviar botones" type="submit" value="Enviar">
+                	</div>
+			</form>
+		</div><!--formulario-->
+        
+    </div><!--end contacto-->
+	 
+	
+    </div><!--End wrap-->
+
+</body>
+</html>

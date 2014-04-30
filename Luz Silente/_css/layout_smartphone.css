@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* CSS Document */
+@media screen and (max-width:481px){
+
+h3{ font-size:2em;}
+
+#wrap {
+	width: 100%;
+	margin:0px auto;
+	padding:1% 0%;
+}
+#header {
+	width:100%;
+}
+#header h1 { font-size:36px; padding:1% 0%;}
+
+/*	-----	-----	-----	-----	Home	-----	-----	-----	-----	----	----*/
+
+#banner{ width:100%;}
+#banner img{ margin:3%; width:90%;}
+#banner blockquote{ margin:0% 0% 1% 3%; font-size:14px; width:96%; }
+#banner p{margin:0% 6% 3% 0%;}
+
+#nav{margin:0%; padding:0%; }
+#nav ul li{ margin:0%; width:24%;}
+#nav a, #nav a:visited, #nav a:link{  width:100%; text-align:center; font-size:1.2em;padding:10% 0%; }
+#rotatorgroup{ display:none;}
+
+/*	-----	-----	-----	-----	Nosotros	-----	-----	-----	-----	----	----*/
+
+#luzSilente { width:100%;}
+#luzSilente #tituloLuzSilente{ width:100%;}
+#luzSilente #tituloLuzSilente h2{ font-size:2em; padding:5% 0%;}
+
+#descripcionLuzSilente { width:100%; }
+#descripcionLuzSilente #logoDescripcion { width:100%; margin:0%;}
+#descripcionLuzSilente #logoDescripcion img{ width:100%;}
+#descripcionLuzSilente #descripcion {width:90%; margin:0%; padding:0% 0% 10% 5%;}
+#descripcionLuzSilente #descripcion p{ font-size:1em; line-height:1emx; word-spacing:0.5em; letter-spacing:1px; padding-top:5%;}
+#facebook{left:50%; bottom:14%} 
+/*	-----	-----	-----	-----	Cine Club	-----	-----	-----	-----	----	----*/
+
+#cineClub{ width:100%;  }
+#cineClub #tituloCineClub{width:100%;}
+#cineClub #tituloCineClub h2{font-size:2em; padding:5% 0%; text-align:center;}
+
+#cineClub .descripcionCineClub{width:100%;}
+#cineClub .descripcionCineClub .cartel{ width:90%; margin:5%; }
+#cineClub .descripcionCineClub .cartel img{ width:100%; height:100%}
+#cineClub .descripcionCineClub .descripcionCartel{width:90%; height:35%; margin:5%; padding:0% 0% 3% 0%}
+#cineClub .descripcionCineClub .descripcionCartel h3{ font-size:1.3em;}
+#cineClub .descripcionCineClub .descripcionCartel p{font-size:1em; line-height:90%; word-spacing:.1em; letter-spacing:.15em; padding-top:4%;}
+#cineClub .descripcionCineClub .descripcionCartel a{ font-size:1.3em }
+
+/*	-----	-----	-----	-----	Talleres	-----	-----	-----	-----	----	----*/
+
+#talleres {width:100%;  }
+#talleres #tituloTalleres {width:100%;}
+#talleres #tituloTalleres h2 { font-size:2em; text-align:center; padding:5% 0%;}
+
+#talleres .descripcionTalleres {width:100%; }
+#talleres .poster{ width:90%; margin:5%; }
+#talleres .poster img{width:100%; }
+#talleres .descripcionPoster{width:90%; margin:0%; padding:0% 0% 5% 0%;}
+#talleres .descripcionPoster h3{ text-align:center; font-size:1.3em; padding:0% 0% 5% 0%;}
+#talleres .descripcionPoster p{font-size:1.3em;  line-height:1em; word-spacing:.5em; letter-spacing:.1em; padding-bottom:10%;}
+#talleres .descripcionPoster a{font-size:1em; color:silver;}
+
+/*	-----	-----	-----	-----	contacto	-----	-----	-----	-----	----	----*/
+
+#contacto{width:100%; }
+#contacto #formulario{width:70%; margin:0% 0% 0% 10% ; padding:10% 0% 4% 0%}
+#contacto #formulario .boton{ width:100%; height:50px; margin:10px 0px;}
+#contacto #formulario .mensaje{width:100%; margin:10px 0px; padding:10% 0% 0% 4%;}
+#contacto #formulario .enviar, #contacto #formulario .borrar{width:50%; height:30px; margin:2% 0% 6% 50%;}
+
+.botones{font-size:16px; padding:0px 0px 0px 10px;}
+
+/*	-----	-----	-----	-----	ContactoTaller	-----	-----	-----	-----	----	----*/
+#contactoTaller{width:100%; }
+#contactoTaller #formulario{width:70%; margin:0% 0% 0% 10% ; padding:10% 0% 4% 0%}
+#contactoTaller #formulario .boton{ width:100%; height:50px; margin:10px 0px;}
+#contactoTaller #formulario .mensaje{width:100%; margin:10px 0px; padding:10% 0% 0% 4%;}
+#contactoTaller #formulario .enviar, #contacto #formulario .borrar{width:50%; height:30px; margin:2% 0% 6% 50%;}
+
+.botones{font-size:16px; padding:0px 0px 0px 10px;}
+/*	-----	-----	-----	-----	ContactoPage	-----	-----	-----	-----	----	----*/
+
+#contactoPage{width:100%; }
+#contactoPage #formulario{width:70%; margin:0% 0% 0% 10% ; padding:10% 0% 4% 0%}
+#contactoPage #formulario .boton{ width:100%; height:50px; margin:10px 0px;}
+#contactoPage #formulario .mensaje{width:100%; margin:10px 0px; padding:10% 0% 0% 4%;}
+#contactoPage #formulario .enviar, #contacto #formulario .borrar{width:50%; height:30px; margin:2% 0% 6% 50%;}
+
+.botones{font-size:16px; padding:0px 0px 0px 10px;}
+
+}

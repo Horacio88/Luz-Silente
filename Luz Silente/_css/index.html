@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es_MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Luz Silente</title>
+
+<link rel="icon" type="image/x-icon" href="_imgs/ico_luz_silente.png" />
+<link rel="shortcut icon" type="image/x-icon" href="_imgs/ico_luz_silente.png" />
+
+<link href="_css/reset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/layout_desktop.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/layout_tablet.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/layout_smartphone.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/layout_common.css" rel="stylesheet" type="text/css" media="screen">
+
+<link href="Item01_Rotator/_css/rotator.css" rel="stylesheet" type="text/css" media="screen">
+<link href="Item02_FancyBox/_css/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen">
+<script type="text/javascript" src="Item03_jQuery/_js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="Item02_FancyBox/_js/jquery.fancybox.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(e) {
+		$(".fancybox").fancybox();
+	});
+</script>
+<script type="text/javascript" src="Item03_jQuery/_js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="Item01_Rotator/_js/jquery.cycle.all.latest.js"></script>
+
+<script type = "text/javascript">
+//todos los efectos diponibles en la libreria
+var fx_gallery = new Array('blindX', 'blindY', 'blindZ', 'cover', 'curtainX', 'curtainY', 'fade', 'fadeZoom', 'growX', 'growY', 'scrollUp', 'scrollDown', 'scrollLeft', 'scrollRight', 'scrollHorz', 'scrollVert', 'slideX', 'slideY', 'turnUp', 'turnDown', 'turnLeft', 'turnRight', 'uncover', 'wipe', 'zoom');
+
+//, 'toss', 'shuffle'
+
+var fx_chosen = Math.floor( Math.random() * fx_gallery.length);
+
+$(document).ready(function() {
+	$('.rotator').cycle({
+		fx: 'scrollLeft',//fx_gallery[fx_chosen],
+		next: '#next',//reconocer con un id= al elemento que queramos que determine la funcion
+		prev: '#prev',//reconocer con un id= al elemento que queramos que determine la funcion
+		random: 1,// 0 = normalmente, 1 = aleatoriamente 
+		pager: '#nav',//paginador con el nombre del id= #nav
+		speed: 870,//870 duracion de la transicion (milisegundos 1s = 1000) 
+		timeout: 8000,//8600 duracion que vemos las imagenes (milisegundos 1s = 1000)
+		pause: 0 //boleano (hover): 1 = activado, 0 = desactivado
+	});
+});
+
+$(document).ready(function(e){
+	$("#luzSilente").hide();
+	$("#cineClub").hide();
+  $("#nosotros").click(function(e){
+	$("#banner").hide("slow");
+	$("#cineClub").hide("slow");
+	$("#luzSilente").show("slow");
+	
+	$(document).ready(function(e){
+  $("#club").click(function(e){
+	$("#banner").hide("slow");
+	$("#luzSilente").hide("slow");
+	$("#cineClub").show("slow");
+	
+  });
+  });
+
+  
+});
+  });
+</script>
+
+</head>
+
+<body>
+	<div id="wrap">
+    
+	  <div id="header">
+      	<h1>Luz Silente</h1>
+      </div>
+    
+      <div id="banner">
+		<img class="responsiv" src="_imgs/portada.jpg">
+      	<div id="rotatorgroup">
+	
+		<div class="rotator">
+		
+		<!--el bloque item se copia para isertar nuevas imagenes dentro de rotator-->
+			<div class="item">
+				<img src="_imgs/portada.jpg" width="400" height="225">
+				<div class="info">
+					<h2>Título de la imagen</h2>
+					<p>Descripción de la Imagen.</p>
+				</div>
+			</div><!-- item -->
+
+			<div class="item">
+				<img src="_imgs/postales.jpg" width="400" height="225">
+				<div class="info">
+					<h2>Título de la imagen</h2>
+					<p>Descripción de la Imagen.</p>
+				</div>
+			</div><!-- item -->
+
+			<div class="item">
+				<img src="_imgs/grupo2.jpg" width="400" height="225">
+				<div class="info">
+					<h2>Título de la imagen</h2>
+					<p>Descripción de la Imagen.</p>
+				</div>
+			</div><!-- item -->
+
+		
+			<div class="item">
+				<img src="_imgs/proyeccion_aire_libre.jpg" width="400" height="225">
+				<div class="info">
+					<h2>Título de la imagen</h2>
+					<p>Descripción de la Imagen.</p>
+				</div>
+			</div><!-- item -->
+	
+	
+
+		</div><!-- rotator -->
+		
+		<div id="prev">«</div>
+		<div id="next">»</div>
+		<div id="nav"></div><!--paginador : nos dice el numero de lementos que hay en rotator y londra en nav-->
+		
+	</div><!-- rotatorgroup -->
+
+ 	        <blockquote>
+        		"El cine es tanto un pensamiento que adquiere forma como una forma que permite pensar"<br>
+        	   	</blockquote>	
+		<p>
+                JEAN-LUC GODARD
+        </p>  
+      </div>
+    
+      <div id="nav">
+      	<ul>
+      		<li><img src=""><a id="nosotros" href="#">Nosotros</a></li>
+            <li><img src=""><a id="club" href="#">Cine Club</a></li>
+            <li><img src=""><a href="talleres.html">Talleres</a></li>
+            <li><img src=""><a href="contacto.html">Contacto</a></li>
+     	</ul>
+      </div>
+      
+<!--				----------------	Nosotros	---------------					-->
+
+      <div id="luzSilente">
+   		<div id="tituloLuzSilente">
+        	<h2>Luz Silente</h2>
+        </div><!--end titulo club-->
+        
+        <div id="descripcionLuzSilente">
+       	  
+          <div id="logoDescripcion">
+          	<a class="fancybox" rel="g02" href="_imgs/logo_luz_silente.jpg"><img src="_imgs/luz_silente.png"></a>
+				<a class="fancybox" rel="g02" href="_imgs/grupo2.jpg"></a>
+				<a class="fancybox" rel="g02" href="_imgs/postales.jpg"></a>
+				<a class="fancybox" rel="g02" href="_imgs/proyeccion_aire_libre.jpg"></a>
+				<a class="fancybox" rel="g02" href="_imgs/proyeccion.jpg"></a>
+				<a class="fancybox" rel="g02" href="_imgs/grupo.jpg"></a>
+				
+          </div><!--End Logo Descripcion -->
+          
+          <div id="descripcion">
+          	<h3>Nuestra visión:</h3>
+            <p>
+            Luz Silente es un organismo universitario autogestivo que centra su atención y esfuerzos en la difusión, discusión, 		
+            crítica, publicación y capacitación de las nociones que comprenden la producción audiovisual video-cinematográfica 
+            dentro de la Escuela Nacional de Artes Plásticas.<br><br> 
+            Luz Silente se proyecta como cineclub; un lugar de reflexión, de 
+            promoción y dignificación de esta expresión artística , educativa y social. 
+            </p><br><br>
+            <a class="fancybox" rel="g08" href="#unete"><h3>&raquo; Unete</h3></a>
+				<a id="facebook" href="https://www.facebook.com/LZSTCC" target="_blank"><img src="_imgs/facebook.png"></a>
+          </div> <!--End Descripcion -->
+          <div class="cl"></div>
+        </div><!--descripcionLuzSilente-->
+
+      </div><!--end luzSilente-->
+
+<!--				----------------	End Nosotros	---------------					-->
+	
+	<div id="unete" style="display:none;">
+	<h3 style="background:silver; display:inline-block; padding:10px"><a class="fancybox" href="#contacto">&raquo; Manda tus datos</a></h3>
+		<img src="_imgs/nuevos_integrantes.jpg" style="width:100%">
+	</div>
+	
+	<div id="contacto" style="display:none;">
+   	      <div id="formulario">
+			<form class="labels" action="MAILTO:luzsilente@gmail.com" method="post" enctype="text/plain">
+				<input class="boton botones" type="text" name="name" value="Nombre">
+				<input class="boton botones" type="text" name="mail" value="E-mail"><br>
+                <textarea class="mensaje botones " rows="10" cols="30" size="50">motivos/habilidades</textarea><br>
+					<div id="botones">
+                		<input class="enviar botones" type="submit" value="Enviar">
+                	</div>
+			</form>
+		</div><!--formulario-->
+        
+    </div><!--end contacto-->
+	 
+	 
+	 
+	 
+	 <!--				----------------	Cine Club	---------------					-->
+
+      <div id="cineClub">
+      	
+        <div id="tituloCineClub">
+        	<h2>Cine Club</h2>
+        </div><!--end titulo Cine club-->
+        
+<!--modulo de ciclo-->
+        <div class="descripcionCineClub">
+       	  <br>
+          <div class="cartel">
+          	<a class="fancybox" rel="g03" href="_imgs/club/feria_del_libro.jpg"><img src="_imgs/club/feria_del_libro.jpg"></a>
+				
+          </div><!--End Cartel-->
+          
+          <div class="descripcionCartel">
+          	<h3>Feria del Libro Arte y Diseño</h3>
+            <p>
+            Durante la feria del libro presentaremos:<br><br>
+            </p>
+            <h3>SIN CITY</h3><br>
+            <h3>AMERICAN SPLENDOR</h3><br>
+            <h3>PERSEPOLIS</h3>
+            <p>
+            26-27-28 de septiembre<br>
+            7 - 9 pm
+            </p>
+				<h5><a class="fancybox" rel="g07" href="#ubicacion">&raquo; ENAP Xochimilco</a></h5>
+          </div>
+          <!--End Descripcion Cartel-->
+          <div class="cl"></div>
+         
+          <!--modulo de ciclo-->
+          <div class="descripcionCineClub">
+       	  
+          <div class="cartel">
+          	<a class="fancybox" rel="" href="_imgs/club/cartel1.jpg"><img src="_imgs/club/cartel1.jpg"></a>
+          </div><!--End Cartel-->
+          
+          <div class="descripcionCartel">
+          	<h3>Miercoles de Cine</h3>
+            <p>Disfruta todos los miercoles de nuestra selección de cine de arte totalmente gratis este mes:</p><br><br><br>
+            <h3>JUAN DE LOS MUERTOS</h3><br>
+            <h3>MADAME SATÁ</h3><br>
+            <h3>ERENDIRA IKIKUNARI</h3>
+            <p>Miercoles 2 pm</p>
+            <h5><a class="fancybox" rel="g07" href="#ubicacion">&raquo; Auditorio Fransisco Goitia</a></h5>
+          </div>
+          <!--End Descripcion Cartel-->
+          <div class="cl"></div>
+          
+<!--modulo de ciclo-->
+          <div class="descripcionCineClub">
+       	  
+          <div class="cartel">
+          	<a class="fancybox" rel="" href="_imgs/club/cine_mexicano.jpg"><img src="_imgs/club/cine_mexicano.jpg"></a>
+          </div><!--End Cartel-->
+          
+          <div class="descripcionCartel">
+          	<h3>Ciclo de cine Mexicano</h3>
+            <p>Selección de cine Mexicano de la "Epoca de Oro" 1936-1958</p>
+            <p>Todos los jueves del mes de Septiembre para recordar nuestra identidad, presentaremos 3 filmes con los que abordaremos marcos historicos, sociales y culturales que han marcado la historia del pais y se ven reflejados por los lentes y los discursos de autores nacionales.</p>
+            <p>2 - 9 pm</p>
+            <h5><a class="fancybox" rel="g07" href="#ubicacion">&raquo;ENAP Xochimilco</a></h5>
+          </div>
+          <!--End Descripcion Cartel-->
+          <div class="cl"></div>
+          
+<!--modulo de ciclo-->
+          <div class="descripcionCineClub">
+       	  
+          <div class="cartel">
+          	<a class="fancybox" rel="" href="_imgs/club/30_anos_sin_bunelj.jpg"><img src="_imgs/club/30_anos_sin_bunelj.jpg"></a>
+          </div><!--End Cartel-->
+          
+          <div class="descripcionCartel">
+          	<h3>Ciclo 30 años sin Buñuel </h3>
+            <p>En este ciclo abordaremos la transcendencia y legado que han dejado los filmes realizados por Buñel, piezas que se desarrollan a partir de sus obras. Platicas con creadores y estudiosos nacionales especialistas en el autor.
+             </p>
+             <p>
+             Actividades: <br><br>
+             -lectura de ensayos<br>
+             -Proyección<br>
+             -Mesa de debate
+             </p>
+             <p>Todos los viernes de septiembre a partir de la 2 pm</p>
+            <h5><a class="fancybox" rel="g07" href="#ubicacion">&raquo;ENAP Xochimilco</a></h5>
+          </div>
+          <!--End Descripcion Cartel-->
+          <div class="cl"></div>
+
+          
+        </div><!--End Descripcion Cine Club-->
+
+      </div><!--End Cine Club-->
+ </div></div></div>
+<!--				----------------	End	 Cine Club	---------------					-->
+
+
+        			<div id="frame" style="display:none;width:100%; height:100%;">
+            			<iframe id="ubicacion" src="gmap2/gmap_mj.html" width="500px" height="600px"></iframe>				
+        			</div><!-- End frame -->
+					
+					
+					
+    </div><!--End wrap-->
+
+</body>
+</html>

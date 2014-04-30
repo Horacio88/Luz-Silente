@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es_MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Luz Silente</title>
+
+<link rel="icon" type="image/x-icon" href="_imgs/ico_luz_silente.png" />
+<link rel="shortcut icon" type="image/x-icon" href="_imgs/ico_luz_silente.png" />
+
+<link href="_css/reset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/layout_desktop.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/layout_tablet.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/layout_smartphone.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/layout_common.css" rel="stylesheet" type="text/css" media="screen">
+
+<link href="Item01_Rotator/_css/rotator.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/animate.css" rel="stylesheet" type="text/css" media="screen">
+
+<script type="text/javascript" src="Item03_jQuery/_js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="Item01_Rotator/_js/jquery.cycle.all.latest.js"></script>
+
+<script type = "text/javascript">
+//todos los efectos diponibles en la libreria
+var fx_gallery = new Array('blindX', 'blindY', 'blindZ', 'cover', 'curtainX', 'curtainY', 'fade', 'fadeZoom', 'growX', 'growY', 'scrollUp', 'scrollDown', 'scrollLeft', 'scrollRight', 'scrollHorz', 'scrollVert', 'slideX', 'slideY', 'turnUp', 'turnDown', 'turnLeft', 'turnRight', 'uncover', 'wipe', 'zoom');
+
+//, 'toss', 'shuffle'
+
+var fx_chosen = Math.floor( Math.random() * fx_gallery.length);
+
+$(document).ready(function() {
+	$('.rotator').cycle({
+		fx: 'scrollLeft',//fx_gallery[fx_chosen],
+		next: '#next',//reconocer con un id= al elemento que queramos que determine la funcion
+		prev: '#prev',//reconocer con un id= al elemento que queramos que determine la funcion
+		random: 1,// 0 = normalmente, 1 = aleatoriamente 
+		pager: '#nav',//paginador con el nombre del id= #nav
+		speed: 870,//870 duracion de la transicion (milisegundos 1s = 1000) 
+		timeout: 8000,//8600 duracion que vemos las imagenes (milisegundos 1s = 1000)
+		pause: 0 //boleano (hover): 1 = activado, 0 = desactivado
+	});
+});
+
+
+</script>
+
+</head>
+
+<body>
+	<div id="wrap">
+    
+	  <div id="header">
+      	<h1>Luz Silente</h1>
+      </div>
+    
+      <div id="banner">
+		<img class="responsiv" src="_imgs/portada.jpg">
+      	<div id="rotatorgroup">
+	
+		<div class="rotator">
+		
+		<!--el bloque item se copia para isertar nuevas imagenes dentro de rotator-->
+			<div class="item">
+				<img src="_imgs/portada.jpg" alt="Nueva imagen" title="Nueva imagen" width="400" height="225">
+				<div class="info">
+					<h2>Título de la imagen</h2>
+					<p>Descripción de la Imagen.</p>
+				</div>
+			</div><!-- item -->
+
+			<div class="item">
+				<img src="_imgs/postales.jpg" alt="Postales" title="Postales"  width="400" height="225">
+				<div class="info">
+					<h2>Título de la imagen</h2>
+					<p>Descripción de la Imagen.</p>
+				</div>
+			</div><!-- item -->
+
+			<div class="item">
+				<img src="_imgs/grupo2.jpg" alt="Grupo Silente" title="Grupo Silente" width="400" height="225">
+				<div class="info">
+					<h2>Título de la imagen</h2>
+					<p>Descripción de la Imagen.</p>
+				</div>
+			</div><!-- item -->
+
+		
+			<div class="item">
+				<img src="_imgs/proyeccion_aire_libre.jpg" alt="Proyeccion al aire libre" title="Proyeccion al aire libre" width="400" height="225">
+				<div class="info">
+					<h2>Título de la imagen</h2>
+					<p>Descripción de la Imagen.</p>
+				</div>
+			</div><!-- item -->
+	
+	
+
+		</div><!-- rotator -->
+		
+		<div id="prev">«</div>
+		<div id="next">»</div>
+		<div id="nav"></div><!--paginador : nos dice el numero de lementos que hay en rotator y londra en nav-->
+		
+	</div><!-- rotatorgroup -->
+
+ 	        <blockquote>
+        		"El cine es tanto un pensamiento que adquiere forma como una forma que permite pensar"<br>
+        	   	</blockquote>	
+		<p>
+                JEAN-LUC GODARD
+        </p>  
+      </div>
+    
+      <div id="nav">
+      	<ul>
+      		<li><img src=""><a href="nosotros.html">Nosotros</a></li>
+            <li><img src=""><a href="club.html">Cine Club</a></li>
+            <li><img src=""><a href="talleres.html">Talleres</a></li>
+            <li><img src=""><a href="contacto.html">Contacto</a></li>
+     	</ul>
+      </div>
+      
+
+    </div><!--End wrap-->
+
+</body>
+</html>

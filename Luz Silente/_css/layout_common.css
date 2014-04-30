@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+body{ background:black; position:relative;}
+.cl{ position:relative; clear:both;}
+h3{ font-size:18px; color:silver;}
+#wrap {
+	background-color: #333;
+	}
+#header {
+	position:relative;
+	background-color: black;
+	border-bottom:1px solid silver;
+}
+
+.home{color:#CCC; text-align:center;}
+.home:hover{ cursor:pointer; color:white;}
+.sitemap{background:#333; color:black}
+#datos:hover{ background:#333; color:silver;}
+/*	-----	-----	-----	-----	Home	-----	-----	-----	-----	----	----*/
+
+#banner{ box-shadow:inset 0px 0px 10px black,0px 0px 10px black,0px 3px 10px black; }
+#banner blockquote{ display:inline-block; font-style:italic;color:white; text-shadow:1px 1px 1px gray, 1px 1px 0.5px #333;}
+#banner p{ color:silver; text-align:right;}
+
+#nav{ background:black;}
+#nav ul li{ background:black; display:inline-block; border-bottom:1px solid silver;}
+#nav a, #nav a:visited, #nav a:link{ color:gray; display:inline-block; text-align:center; }
+#nav a:hover { color:silver; background:#333; text-shadow:1px 0px 1px black; box-shadow:inset 0px 0px 2px;}
+#nav a:active{box-shadow:inset 0px 0px 5px, inset 0px 0px 2px;}
+
+/*	-----	-----	-----	-----	Nosotros	-----	-----	-----	-----	----	----*/
+
+#luzSilente { box-shadow:inset 0px 0px 10px black; }
+#luzSilente #tituloLuzSilente h2{ text-align:center; box-shadow:0px 1px 5px black,inset 0px 1px 15px black,inset 0px -1px 5px black;color:gray;text-shadow: 0.6px 0.6px 0.6px black;}
+#unete a:hover{ background:teal;padding:10px; color:white;display:inline-block;}
+#descripcionLuzSilente { background:gray; box-shadow:inset 0px 1px 10px black,inset 0px -1px 100px black;}
+#descripcionLuzSilente #logoDescripcion {float:left; border:px solid red;}
+#descripcionLuzSilente #descripcion { position:relative; float:left; border:px solid red;}
+#descripcionLuzSilente #descripcion p{color:white; word-spacing:5px; letter-spacing:1px; text-shadow: 0.3px 0.3px 0.3px black;}
+#facebook{ position:absolute; opacity:0.5; border-bottom:1px solid white; padding:0px;}
+#facebook:hover{ opacity:1; padding:0px 0px 5px 0px;}
+#unete{ background:#333; display:inline-block; padding:5px;}
+#unete:hover{background:#999; color:black;}
+/*	-----	-----	-----	-----	Cine Club	-----	-----	-----	-----	----	----*/
+
+#cineClub{ box-shadow:inset 0px 0px 10px black; }
+
+#cineClub #tituloCineClub h2{ext-align:center; box-shadow:0px 1px 5px black,inset 0px 1px 15px black,inset 0px -1px 5px black; color:gray;text-shadow: 0.6px 0.6px 0.6px black;}
+
+#cineClub .descripcionCineClub{background:gray;box-shadow:inset 0px 1px 10px black, 0px -5px 10px black,inset 0px -1px 100px black;}
+#cineClub .descripcionCineClub .cartel{ display:inline-block; overflow:hidden;}
+#cineClub .descripcionCineClub .cartel img{border-radius:20px;}
+#cineClub .descripcionCineClub .descripcionCartel{float:left;}
+
+#cineClub .descripcionCineClub .descripcionCartel p{color:white; text-shadow: 0.3px 0.3px 0.3px black;}
+#cineClub .descripcionCineClub .descripcionCartel a{ background:#333; margin-top:10px; padding:5px 5px; color:silver; display:inline-block;}
+#cineClub .descripcionCineClub .descripcionCartel a:hover{background:#999; color:black;}
+
+/*	-----	-----	-----	-----	Talleres	-----	-----	-----	-----	----	----*/
+
+#talleres {box-shadow:inset 0px 0px 10px black; }
+
+#talleres #tituloTalleres h2 { text-align:center; box-shadow:0px 1px 5px black,inset 0px 1px 15px black,inset 0px -1px 5px black; color:gray;text-shadow: 0.6px 0.6px 0.6px black;}
+
+#talleres .descripcionTalleres { background:gray; box-shadow:inset 0px 1px 10px black,inset 0px -1px 100px black;}
+#talleres .poster{ float:left; }
+#talleres .poster img{border-radius:20px;}
+#talleres .descripcionPoster{float:left; }
+#talleres .descripcionPoster h3 a:hover{background:#999; color:black;}
+#talleres .descripcionPoster h3 a:active{box-shadow:inset 0px 0px 10px gray;}
+#talleres .descripcionPoster p{color:white; letter-spacing:1px; text-shadow: 0.3px 0.3px 0.3px black; text-align:right;}
+#talleres .descripcionPoster a{color:silver; background:#333; display:inline-block; padding:10px;}
+
+/*	-----	-----	-----	-----	Contacto	-----	-----	-----	-----	----	----*/
+
+#contacto{box-shadow:inset 0px 0px 10px black, inset 0px 0px 50px black;}
+
+#contacto #formulario .mensaje{ resize:none;}
+#contacto #formulario .enviar, #contacto #formulario .borrar{box-shadow: 0px 0px 5px black,inset 0px -5px 5px black,inset 0px -15px 15px black;}
+#contacto #formulario .enviar:hover, #contacto #formulario .borrar:hover{box-shadow: 0px 0px 5px black, inset 0px 1px 1px white,inset 0px -15px 5px black;}
+#contacto #formulario .enviar:active, #contacto #formulario .borrar:active{box-shadow: 0px 0px 5px black, inset 0px 1px 1px white,inset 0px 5px 5px black,inset 0px 15px 15px black;}
+.botones{border-radius:20px; border:none; background:gray; color:silver;box-shadow:inset 0px 0px 5px black, inset 0px 0px 7px black,inset 0px 0px 1px black;}
+/*	-----	-----	-----	-----	ContactoTaller	-----	-----	-----	-----	----	----*/
+
+#contactoTaller{box-shadow:inset 0px 0px 10px black, inset 0px 0px 50px black;}
+
+#contactoTaller #formulario .mensaje{ resize:none;}
+#contactoTaller #formulario .enviar, #contacto #formulario .borrar{box-shadow: 0px 0px 5px black,inset 0px -5px 5px black,inset 0px -15px 15px black;}
+#contactoTaller #formulario .enviar:hover, #contacto #formulario .borrar:hover{box-shadow: 0px 0px 5px black, inset 0px 1px 1px white,inset 0px -15px 5px black;}
+#contactoTaller #formulario .enviar:active, #contacto #formulario .borrar:active{box-shadow: 0px 0px 5px black, inset 0px 1px 1px white,inset 0px 5px 5px black,inset 0px 15px 15px black;}
+
+/*	-----	-----	-----	-----	ContactoPage	-----	-----	-----	-----	----	----*/
+
+#contactoPage{box-shadow:inset 0px 0px 10px black, inset 0px 0px 50px black;}
+
+#contactoPage #formulario .mensaje{ resize:none;}
+#contactoPage #formulario .enviar, #contacto #formulario .borrar{box-shadow: 0px 0px 5px black,inset 0px -5px 5px black,inset 0px -15px 15px black;}
+#contactoPage #formulario .enviar:hover, #contacto #formulario .borrar:hover{box-shadow: 0px 0px 5px black, inset 0px 1px 1px white,inset 0px -15px 5px black;}
+#contactoPage #formulario .enviar:active, #contacto #formulario .borrar:active{box-shadow: 0px 0px 5px black, inset 0px 1px 1px white,inset 0px 5px 5px black,inset 0px 15px 15px black;}
+.botones{border-radius:20px; border:none; background:gray; color:silver;box-shadow:inset 0px 0px 5px black, inset 0px 0px 7px black,inset 0px 0px 1px black;}

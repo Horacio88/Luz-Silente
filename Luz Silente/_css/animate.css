@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@keyframes logoIntro{
+	0%{  opacity:0; top:8%;}
+	30%{  opacity:0; top:8%;}
+	50%{  opacity:1; top:38%;}
+	70%{ opacity:1; top:37%;}
+	100%{ opacity:0; top:38%;}
+	}
+#intro img{ z-index:10; width:10%; position:absolute; left:45%;top:8%; opacity:0; animation-name:logoIntro; animation-duration:4s; animation-iteration-count:1; animation-timing-function:ease-in-out;}
+
+@-o-keyframes logoIntro{
+	0%{  opacity:0; top:8%;}
+	30%{  opacity:0; top:8%;}
+	50%{  opacity:1; top:38%;}
+	70%{ opacity:1; top:37%;}
+	100%{ opacity:0; top:38%;}
+	}
+#intro img{ z-index:10; width:10%; position:absolute; left:45%;top:8%; opacity:0; -o-animation-name:logoIntro; -o-animation-duration:4s; -o-animation-iteration-count:1; -o-animation-timing-function:ease-in-out;}
+@-ms-keyframes logoIntro{
+	0%{  opacity:0; top:8%;}
+	30%{  opacity:0; top:8%;}
+	50%{  opacity:1; top:38%;}
+	70%{ opacity:1; top:37%;}
+	100%{ opacity:0; top:38%;}
+	}
+#intro img{ z-index:10; width:10%; position:absolute; left:45%;top:8%; opacity:0; -ms-animation-name:logoIntro; -ms-animation-duration:4s; -ms-animation-iteration-count:1; -ms-animation-timing-function:ease-in-out;}
+@-moz-keyframes logoIntro{
+	0%{  opacity:0; top:8%;}
+	30%{  opacity:0; top:8%;}
+	50%{  opacity:1; top:38%;}
+	70%{ opacity:1; top:37%;}
+	100%{ opacity:0; top:38%;}
+	}
+#intro img{ z-index:10; width:10%; position:absolute; left:45%;top:8%; opacity:0; -moz-animation-name:logoIntro; -moz-animation-duration:4s; -moz-animation-iteration-count:1; -moz-animation-timing-function:ease-in-out;}
+@-khtml-keyframes logoIntro{
+	0%{  opacity:0; top:8%;}
+	30%{  opacity:0; top:8%;}
+	50%{  opacity:1; top:38%;}
+	70%{ opacity:1; top:37%;}
+	100%{ opacity:0; top:38%;}
+	}
+#intro img{ z-index:10; width:10%; position:absolute; left:45%;top:8%; opacity:0; -khtml-animation-name:logoIntro; -khtml-animation-duration:4s; -khtml-animation-iteration-count:1; -khtml-animation-timing-function:ease-in-out;}
+@-webkit-keyframes logoIntro{
+		0%{  opacity:0; top:8%;}
+	30%{  opacity:0; top:8%;}
+	50%{  opacity:1; top:38%;}
+	70%{ opacity:1; top:37%;}
+	100%{ opacity:0; top:38%;}
+	}
+#intro img{ z-index:10; width:10%; position:absolute; left:45%;top:8%; opacity:0; -webkit-animation-name:logoIntro; -webkit-animation-duration:4s; -webkit-animation-iteration-count:1; -webkit-animation-timing-function:ease-in-out;}
+
+
+
+
+@keyframes intro{
+	0%{  opacity:0;visibility: hidden;}
+	70%{  opacity:0;visibility:hidden;}
+	100%{  opacity:1;visibility:visible;}
+	}
+#wrap{ visibility:visible; animation-name:intro; animation-duration:5s; animation-iteration-count:1; animation-timing-function:ease-in-out}
+
+@-o-keyframes intro{
+	0%{  opacity:0;}
+	70%{  opacity:0;}
+	100%{  opacity:1;}
+	}
+#wrap{ -o-animation-name:intro; -o-animation-duration:5s; -o-animation-iteration-count:1; -o-animation-timing-function:ease-in-out}
+
+@-ms-keyframes intro{
+	0%{ opacity:0;}
+	70%{ opacity:0;}
+	100%{opacity:1;}
+	}
+#wrap{ -ms-animation-name:intro; -ms-animation-duration:5s; -ms-animation-iteration-count:1; -ms-animation-timing-function:ease-in-out}-moz-
+@-moz-keyframes intro{
+	0%{ opacity:0;}
+	70%{ opacity:0;}
+	100%{ opacity:1;}
+	}
+#wrap{ -moz-animation-name:intro; -moz-animation-duration:5s; -moz-animation-iteration-count:1; -moz-animation-timing-function:ease-in-out}
+
+@-khtml-keyframes intro{
+	0%{  opacity:0;}
+	70%{  opacity:0;}
+	100%{  opacity:1;}
+	}
+#wrap{ -khtml-animation-name:intro; -khtml-animation-duration:5s; -khtml-animation-iteration-count:1; -khtml-animation-timing-function:ease-in-out}
+
+@-webkit-keyframes intro{
+	0%{  opacity:0;visibility: hidden;}
+	70%{  opacity:0;visibility:hidden;}
+	100%{  opacity:1;visibility:visible;}
+	}
+#wrap{visibility:visible; -webkit-animation-name:intro; -webkit-animation-duration:5s; -webkit-animation-iteration-count:1; -webkit-animation-timing-function:ease-in-out}
